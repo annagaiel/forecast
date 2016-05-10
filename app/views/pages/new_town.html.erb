@@ -1,0 +1,20 @@
+<h1>Weather Forecast at <%= @city.capitalize %>, <%= @region.upcase %></h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Day</th>
+    <th>High</th>
+    <th>Low</th>
+    <th>Text</th>
+  </tr>
+  <% @forecasts[0..4].each do |forecast| %>
+  <tr>
+    <td><%= forecast["date"] %></td>
+    <td><%= forecast["day"] %></td>
+    <td><%= forecast["high"] %></td>
+    <td><%= forecast["low"] %></td>
+    <td><%= forecast["text"] %></td>
+  </tr>
+  <% end %>
+</table>

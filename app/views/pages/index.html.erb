@@ -1,0 +1,12 @@
+<h1>New Weather</h1>
+
+<%= form_tag '/new_town', method: :get do %>
+<%= label_tag :region %>
+<%= text_field_tag :region %>
+
+<%= label_tag :city %>
+<%= text_field_tag :city%>
+
+<%= submit_tag 'Submit' %>
+
+<% end %>
